@@ -135,9 +135,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Eve\Environment.cpp" />
     <ClCompile Include="src\Eve\Eng\File.cpp" />
+    <ClCompile Include="src\Eve\Eng\Input.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\Eve\Eng\Graphics.cpp" />
+    <ClCompile Include="src\Eve\Eng\Window.cpp" />
     <ClCompile Include="src\Precomp.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -147,11 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Defines.hpp" />
-    <ClInclude Include="inc\Eve\Eng\File.hpp" />
     <ClInclude Include="inc\Eve\Environment.hpp" />
+    <ClInclude Include="inc\Eve\Eng\File.hpp" />
+    <ClInclude Include="inc\Eve\Eng\Input.hpp" />
     <ClInclude Include="inc\Eve\Math.hpp" />
     <ClInclude Include="inc\Eve\Vector.hpp" />
-    <ClInclude Include="inc\Eve\Eng\Graphics.hpp" />
+    <ClInclude Include="inc\Eve\Eng\Window.hpp" />
     <ClInclude Include="inc\Precomp.hpp" />
     <ClInclude Include="inc\Types.hpp" />
   </ItemGroup>

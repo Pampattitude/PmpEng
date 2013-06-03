@@ -1,5 +1,8 @@
 #pragma once
 
+// Dependencies:
+//   - "Eve/Eng/Window.hpp"
+
 namespace Eve
 {
 	class Environment
@@ -7,12 +10,27 @@ namespace Eve
 	public:
 		static Environment	&get()
 		{
-			if (nullptr == environ_)
-				environ_ = new Environment;
-			return *environ_;
+			if (nullptr == ptr)
+			{
+				atexit(del);
+				ptr = new Environment;
+			}
+			return *ptr;
 		}
+		
+	private:
+		static void			del()
+		{ delete ptr; ptr = nullptr; }
+
+		Environment();
+		/* Environment(Environment const &) = delete; */
+		/* Environment(Environment &&) = delete; */
+
+		/* Environment const	&operator=(Environment) = delete; */
+
+		~Environment() NOEXCEPT;
 
 	private:
-		static Environment	*
+		static Environment	*ptr;
 	};
 }

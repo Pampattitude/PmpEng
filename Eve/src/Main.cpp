@@ -6,25 +6,31 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Eve/Eng/Graphics.hpp"
+#include "Eve/Eng/Window.hpp"
+#include "Eve/Eng/Input.hpp"
 #include "Eve/Eng/File.hpp"
+
+#include "Eve/Environment.hpp"
 
 #include "Eve/Math.hpp"
 
 int		main(void)
 {
-	// atexit() to free singletons & global
+	Eve::Environment		&e = Eve::Environment::get();
 
-	Eve::Eng::Graphics::Context	ctx;
-	Eve::Eng::Graphics::Window	win;
+	Eve::Eng::Window			win;
+	Eve::Eng::Window::Context	ctx;
+
+	win.open(800, 600, "PmpEng::Eve", Eve::Eng::Window::Windowed);
 	ctx.init();
 
-	win.open(800, 600, "PmpEng::Eve", Eve::Eng::Graphics::Window::Windowed);
+	Eve::Eng::Input				inp(win);
 
 	while (win.isOpened())
 	{
-		glfwPollEvents();
-		win.display();
+		inp.pollEvents();
+		if (win.isOpened())
+			win.display();
 	}
 
 	ctx.terminate();

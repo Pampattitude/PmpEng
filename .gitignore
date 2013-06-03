@@ -219,7 +219,8 @@ pip-log.txt
 ####################
 # Project dependent
 ####################
+/bin/
+/doc/
 /inc/
 /ipch/
 /lib/
-/bin/

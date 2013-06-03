@@ -8,9 +8,11 @@
     <ClCompile Include="src\Eve\Eng\File.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\Eve\Eng\Graphics.cpp">
+    <ClCompile Include="src\Eve\Eng\Input.cpp" />
+    <ClCompile Include="src\Eve\Eng\Window.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\Eve\Environment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\Eve\Vector.hpp">
@@ -23,7 +25,8 @@
     <ClInclude Include="inc\Eve\Eng\File.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="inc\Eve\Eng\Graphics.hpp">
+    <ClInclude Include="inc\Eve\Eng\Input.hpp" />
+    <ClInclude Include="inc\Eve\Eng\Window.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="inc\Eve\Environment.hpp" />
