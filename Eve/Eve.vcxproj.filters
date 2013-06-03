@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Precomp.cpp" />
+    <ClCompile Include="src\Eve\Eng\File.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Eve\Eng\Graphics.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\Eve\Vector.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Eve\Math.hpp" />
+    <ClInclude Include="inc\Defines.hpp" />
+    <ClInclude Include="inc\Types.hpp" />
+    <ClInclude Include="inc\Precomp.hpp" />
+    <ClInclude Include="inc\Eve\Eng\File.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Eve\Eng\Graphics.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Eve\Environment.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{d8785455-d05f-4b3c-bd47-27a2b1a46f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{07112161-8813-4525-8f41-7e5e162c16c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{d421ab6d-b93c-40bc-b946-b8eb68223f12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\basic.vert">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

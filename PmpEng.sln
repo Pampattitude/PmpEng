@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eve", "Eve\Eve.vcxproj", "{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|Win64 = Debug|Win64
+		Release|Win32 = Release|Win32
+		Release|Win64 = Release|Win64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Debug|Win32.Build.0 = Debug|Win32
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Debug|Win64.ActiveCfg = Debug|x64
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Debug|Win64.Build.0 = Debug|x64
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Release|Win32.ActiveCfg = Release|Win32
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Release|Win32.Build.0 = Release|Win32
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Release|Win32.Deploy.0 = Release|Win32
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Release|Win64.ActiveCfg = Release|x64
+		{CC7D83FB-1F37-4919-834D-B4460DD7B7D7}.Release|Win64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
