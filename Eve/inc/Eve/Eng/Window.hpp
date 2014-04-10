@@ -1,7 +1,7 @@
 #pragma once
 
 // Dependencies:
-//   - <GL/glfw3.h>
+//   - <GLFW/glfw3.h>
 //   - "Define.hpp"
 //   - "Types.hpp"
 //   - "Eve/Eng/Input.hpp"
