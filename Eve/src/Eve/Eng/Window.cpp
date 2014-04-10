@@ -27,7 +27,7 @@ namespace Eve
 
 			glfwMakeContextCurrent(this->win_);
 		}
-		void	Window::close()
+		void	Window::close() NOEXCEPT
 		{
 			if (nullptr != this->win_)
 			{
@@ -39,7 +39,7 @@ namespace Eve
 		bool	Window::isOpened() const NOEXCEPT
 		{ return nullptr != this->win_; }
 
-		void	Window::display()
+		void	Window::display() NOEXCEPT
 		{
 			glfwPollEvents();
 			glfwSwapBuffers(this->win_);
@@ -52,9 +52,9 @@ namespace Eve
 		Window::Context::Context()
 		{ glfwInit(); }
 
-		void	Window::Context::init()
+		void	Window::Context::init() NOEXCEPT
 		{ glewExperimental = GL_TRUE; glewInit(); /* TMPTMPTMP: Check 4 errs */ }
-		void	Window::Context::terminate()
+		void	Window::Context::terminate() NOEXCEPT
 		{ /* */ }
 
 		Window::Context::~Context()
