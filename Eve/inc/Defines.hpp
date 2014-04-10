@@ -19,7 +19,7 @@
 # undef NOEXCEPT
 # define NOEXCEPT /* not yet implemented */
 # if defined(__GNUC__)
-#  if ((__GNUC__ == 3) && (__GNUC_MINOR__ >= 7)) ||
+#  if ((__GNUC__ == 3) && (__GNUC_MINOR__ >= 7)) || \
 	  (__GNUC__ > 3)
 #   undef NOEXCEPT
 #   define NOEXCEPT noexcept
